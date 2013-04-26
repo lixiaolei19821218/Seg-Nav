@@ -10,7 +10,8 @@
 
 @interface BIDTaskListController ()
 
-@property (strong, nonatomic) NSArray *tasks;
+@property (strong, nonatomic) NSMutableArray *tasks;
+@property (copy, nonatomic) NSDictionary *editedSelection;
 
 @end
 
@@ -29,7 +30,7 @@
 {
     [super viewDidLoad];
     
-    self.tasks = @[@"Walk the dog",
+    self.tasks = [@[@"Walk the dog",
                    @"URGENT: Buy milk",
                    @"Clean hidden lair",
                    @"Invent miniature dolphins",
@@ -37,7 +38,7 @@
                    @"Get revenge on do-gooder heroes",
                    @"URGENT: Fold laundry",
                    @"Hold entire world hostage",
-                   @"Manicure"];
+                   @"Manicure"] mutableCopy];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -85,7 +86,7 @@
     }
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     
-    UILabel *cellLabel = (id)[cell viewWithTag:1];
+    UILabel *cellLabel = (UILabel *)[cell viewWithTag:1];
     NSMutableAttributedString *richTask = [[NSMutableAttributedString alloc] initWithString:task];
     NSDictionary *urgentAttributes =
     @{NSFontAttributeName : [UIFont fontWithName:@"Courier" size:24],
@@ -146,6 +147,35 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UIViewController *destination = segue.destinationViewController;
+    if ([destination respondsToSelector:@selector(setDelegate:)]) {
+        [destination setValue:self forKey:@"delegate"];
+        //[destination setDelegate:self];
+    }
+    if ([destination respondsToSelector:@selector(setSelection:)]) {
+        // prepare selection info
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        id object = self.tasks[indexPath.row];
+        NSDictionary *selection = @{@"indexPath" : indexPath,
+                                    @"object" : object};
+        [destination setValue:selection forKey:@"selection"];
+    }
+}
+
+- (void)setEditedSelection:(NSDictionary *)dict
+{
+    if (![dict isEqualToDictionary:self.editedSelection])
+    {
+        _editedSelection = dict;
+        NSIndexPath *indexPath = dict[@"indexPath"];
+        id newValue = dict[@"object"];
+        [self.tasks replaceObjectAtIndex:indexPath.row withObject:newValue];
+        [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 @end
