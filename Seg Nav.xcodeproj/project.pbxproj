@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A422FD9C172A6D64009AE453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A422FD9B172A6D64009AE453 /* UIKit.framework */; };
+		A422FD9E172A6D64009AE453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A422FD9D172A6D64009AE453 /* Foundation.framework */; };
+		A422FDA0172A6D64009AE453 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A422FD9F172A6D64009AE453 /* CoreGraphics.framework */; };
+		A422FDA6172A6D64009AE453 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A422FDA4172A6D64009AE453 /* InfoPlist.strings */; };
+		A422FDA8172A6D64009AE453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A422FDA7172A6D64009AE453 /* main.m */; };
+		A422FDAC172A6D64009AE453 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A422FDAB172A6D64009AE453 /* BIDAppDelegate.m */; };
+		A422FDAE172A6D64009AE453 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A422FDAD172A6D64009AE453 /* Default.png */; };
+		A422FDB0172A6D64009AE453 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A422FDAF172A6D64009AE453 /* Default@2x.png */; };
+		A422FDB2172A6D64009AE453 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A422FDB1172A6D64009AE453 /* Default-568h@2x.png */; };
+		A422FDB9172A6DE0009AE453 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A422FDB8172A6DE0009AE453 /* MainStoryboard.storyboard */; };
+		A422FDBC172A7694009AE453 /* BIDTaskListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A422FDBB172A7694009AE453 /* BIDTaskListController.m */; };
+		A422FDBF172A7706009AE453 /* BIDTaskDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A422FDBE172A7706009AE453 /* BIDTaskDetailController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A422FD98172A6D64009AE453 /* Seg Nav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seg Nav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A422FD9B172A6D64009AE453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A422FD9D172A6D64009AE453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A422FD9F172A6D64009AE453 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A422FDA3172A6D64009AE453 /* Seg Nav-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Seg Nav-Info.plist"; sourceTree = "<group>"; };
+		A422FDA5172A6D64009AE453 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A422FDA7172A6D64009AE453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A422FDA9172A6D64009AE453 /* Seg Nav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Seg Nav-Prefix.pch"; sourceTree = "<group>"; };
+		A422FDAA172A6D64009AE453 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		A422FDAB172A6D64009AE453 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		A422FDAD172A6D64009AE453 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A422FDAF172A6D64009AE453 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A422FDB1172A6D64009AE453 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A422FDB8172A6DE0009AE453 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A422FDBA172A7694009AE453 /* BIDTaskListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTaskListController.h; sourceTree = "<group>"; };
+		A422FDBB172A7694009AE453 /* BIDTaskListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTaskListController.m; sourceTree = "<group>"; };
+		A422FDBD172A7706009AE453 /* BIDTaskDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDTaskDetailController.h; sourceTree = "<group>"; };
+		A422FDBE172A7706009AE453 /* BIDTaskDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDTaskDetailController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A422FD95172A6D64009AE453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422FD9C172A6D64009AE453 /* UIKit.framework in Frameworks */,
+				A422FD9E172A6D64009AE453 /* Foundation.framework in Frameworks */,
+				A422FDA0172A6D64009AE453 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A422FD8F172A6D64009AE453 = {
+			isa = PBXGroup;
+			children = (
+				A422FDA1172A6D64009AE453 /* Seg Nav */,
+				A422FD9A172A6D64009AE453 /* Frameworks */,
+				A422FD99172A6D64009AE453 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A422FD99172A6D64009AE453 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A422FD98172A6D64009AE453 /* Seg Nav.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A422FD9A172A6D64009AE453 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A422FD9B172A6D64009AE453 /* UIKit.framework */,
+				A422FD9D172A6D64009AE453 /* Foundation.framework */,
+				A422FD9F172A6D64009AE453 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A422FDA1172A6D64009AE453 /* Seg Nav */ = {
+			isa = PBXGroup;
+			children = (
+				A422FDBA172A7694009AE453 /* BIDTaskListController.h */,
+				A422FDBB172A7694009AE453 /* BIDTaskListController.m */,
+				A422FDAA172A6D64009AE453 /* BIDAppDelegate.h */,
+				A422FDAB172A6D64009AE453 /* BIDAppDelegate.m */,
+				A422FDA2172A6D64009AE453 /* Supporting Files */,
+				A422FDB8172A6DE0009AE453 /* MainStoryboard.storyboard */,
+				A422FDBD172A7706009AE453 /* BIDTaskDetailController.h */,
+				A422FDBE172A7706009AE453 /* BIDTaskDetailController.m */,
+			);
+			path = "Seg Nav";
+			sourceTree = "<group>";
+		};
+		A422FDA2172A6D64009AE453 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A422FDA3172A6D64009AE453 /* Seg Nav-Info.plist */,
+				A422FDA4172A6D64009AE453 /* InfoPlist.strings */,
+				A422FDA7172A6D64009AE453 /* main.m */,
+				A422FDA9172A6D64009AE453 /* Seg Nav-Prefix.pch */,
+				A422FDAD172A6D64009AE453 /* Default.png */,
+				A422FDAF172A6D64009AE453 /* Default@2x.png */,
+				A422FDB1172A6D64009AE453 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A422FD97172A6D64009AE453 /* Seg Nav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A422FDB5172A6D64009AE453 /* Build configuration list for PBXNativeTarget "Seg Nav" */;
+			buildPhases = (
+				A422FD94172A6D64009AE453 /* Sources */,
+				A422FD95172A6D64009AE453 /* Frameworks */,
+				A422FD96172A6D64009AE453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Seg Nav";
+			productName = "Seg Nav";
+			productReference = A422FD98172A6D64009AE453 /* Seg Nav.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A422FD90172A6D64009AE453 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "李 潇磊";
+			};
+			buildConfigurationList = A422FD93172A6D64009AE453 /* Build configuration list for PBXProject "Seg Nav" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A422FD8F172A6D64009AE453;
+			productRefGroup = A422FD99172A6D64009AE453 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A422FD97172A6D64009AE453 /* Seg Nav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A422FD96172A6D64009AE453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422FDA6172A6D64009AE453 /* InfoPlist.strings in Resources */,
+				A422FDAE172A6D64009AE453 /* Default.png in Resources */,
+				A422FDB0172A6D64009AE453 /* Default@2x.png in Resources */,
+				A422FDB2172A6D64009AE453 /* Default-568h@2x.png in Resources */,
+				A422FDB9172A6DE0009AE453 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A422FD94172A6D64009AE453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422FDA8172A6D64009AE453 /* main.m in Sources */,
+				A422FDAC172A6D64009AE453 /* BIDAppDelegate.m in Sources */,
+				A422FDBC172A7694009AE453 /* BIDTaskListController.m in Sources */,
+				A422FDBF172A7706009AE453 /* BIDTaskDetailController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A422FDA4172A6D64009AE453 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A422FDA5172A6D64009AE453 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A422FDB3172A6D64009AE453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A422FDB4172A6D64009AE453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A422FDB6172A6D64009AE453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seg Nav/Seg Nav-Prefix.pch";
+				INFOPLIST_FILE = "Seg Nav/Seg Nav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A422FDB7172A6D64009AE453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seg Nav/Seg Nav-Prefix.pch";
+				INFOPLIST_FILE = "Seg Nav/Seg Nav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A422FD93172A6D64009AE453 /* Build configuration list for PBXProject "Seg Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A422FDB3172A6D64009AE453 /* Debug */,
+				A422FDB4172A6D64009AE453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A422FDB5172A6D64009AE453 /* Build configuration list for PBXNativeTarget "Seg Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A422FDB6172A6D64009AE453 /* Debug */,
+				A422FDB7172A6D64009AE453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A422FD90172A6D64009AE453 /* Project object */;
+}
